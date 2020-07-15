@@ -46,3 +46,12 @@ class RegisteredModel(_ModelDBEntity):
     @classmethod
     def _create_proto_internal(cls, conn, ctx, name, desc=None, tags=None, attrs=None, date_created=None, public_within_org=None):
         raise NotImplementedError
+
+    def add_label(self, label):
+        raise NotImplementedError
+
+    def del_label(self, label):
+        raise NotImplementedError
+
+    def get_labels(self):
+        raise NotImplementedError
