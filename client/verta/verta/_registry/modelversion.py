@@ -51,3 +51,12 @@ class RegisteredModelVersion(_ModelDBEntity):
 
     def del_environment(self):
         raise NotImplementedError
+
+    def add_label(self, label):
+        raise NotImplementedError
+
+    def del_label(self, label):
+        raise NotImplementedError
+
+    def get_labels(self):
+        raise NotImplementedError
